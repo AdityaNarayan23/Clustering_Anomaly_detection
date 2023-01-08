@@ -16,7 +16,6 @@ from pyspark.ml.evaluation import ClusteringEvaluator
 
 def main():
     path='/mnt/c/Codefiles/User_Activity_Profiling/'
-    #path = 'hdfs://hadpdlnn01.p22.eng.sjc01.qualys.com/anarayan/'
     df = spark.read.csv(path+'emp_login_data1.csv', inferSchema=True, header=True)
     df.show(5)
     df.printSchema()
